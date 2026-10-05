@@ -1,0 +1,49 @@
+# Keep the Gradient - Episode 8 manifest
+#
+# The [[timeline]] list IS the cut: entries play in this order, and recutting
+# the episode means editing this list (never copying scene folders). An entry
+# is either a manim scene, scene = "file.py:ClassName" under scenes/, or a
+# finished clip, clip = "assets/footage/name.mp4" under this folder.
+# Validate with: ./kg check 8
+
+[episode]
+number = 8
+slug = "distributed-gd-sar"
+title = "Searching Together: Distributed Gradient Descent and SAR Robots"
+status = "planned"        # planned | scripting | animating | narrating | review | published
+target_minutes = "~20"
+from_pdf = "Video 5, second half"
+depends_on = [1, 3, 7]      # episodes a viewer should have watched first
+
+[[timeline]]
+scene = "s00_title.py:Title"
+
+[[timeline]]
+scene = "s01_hook_team.py:HookTeam"
+
+[[timeline]]
+scene = "s02_sum_problem.py:SumProblem"
+
+[[timeline]]
+scene = "s03_dgd.py:Dgd"
+
+[[timeline]]
+scene = "s04_dgd_stalls.py:DgdStalls"
+
+[[timeline]]
+scene = "s05_gradient_tracking.py:GradientTracking"
+
+[[timeline]]
+scene = "s06_price_of_disagreement.py:PriceOfDisagreement"
+
+[[timeline]]
+scene = "s07_sar_coverage.py:SarCoverage"
+
+[[timeline]]
+scene = "s08_sar_project.py:SarProject"
+
+[[timeline]]
+scene = "s09_swarms_sensors.py:SwarmsSensors"
+
+[[timeline]]
+scene = "s10_recap_closing.py:RecapClosing"

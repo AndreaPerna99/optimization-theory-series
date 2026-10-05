@@ -1,0 +1,46 @@
+# Keep the Gradient - Episode 2 manifest
+#
+# The [[timeline]] list IS the cut: entries play in this order, and recutting
+# the episode means editing this list (never copying scene folders). An entry
+# is either a manim scene, scene = "file.py:ClassName" under scenes/, or a
+# finished clip, clip = "assets/footage/name.mp4" under this folder.
+# Validate with: ./kg check 2
+
+[episode]
+number = 2
+slug = "linear-programming-convexity"
+title = "Corners and Bowls: Linear Programming and Convexity"
+status = "planned"        # planned | scripting | animating | narrating | review | published
+target_minutes = "15–20"
+from_pdf = "Video 2"
+depends_on = [1]      # episodes a viewer should have watched first
+
+[[timeline]]
+scene = "s00_title.py:Title"
+
+[[timeline]]
+scene = "s01_hook_factory.py:HookFactory"
+
+[[timeline]]
+scene = "s02_lp_polytope.py:LpPolytope"
+
+[[timeline]]
+scene = "s03_simplex_walk.py:SimplexWalk"
+
+[[timeline]]
+scene = "s04_applications.py:Applications"
+
+[[timeline]]
+scene = "s05_edge_optimum.py:EdgeOptimum"
+
+[[timeline]]
+scene = "s06_convexity.py:Convexity"
+
+[[timeline]]
+scene = "s07_nonconvex.py:Nonconvex"
+
+[[timeline]]
+scene = "s08_duality_prices.py:DualityPrices"
+
+[[timeline]]
+scene = "s09_recap_closing.py:RecapClosing"

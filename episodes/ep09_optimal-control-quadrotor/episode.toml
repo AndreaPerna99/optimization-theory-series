@@ -1,0 +1,46 @@
+# Keep the Gradient - Episode 9 manifest
+#
+# The [[timeline]] list IS the cut: entries play in this order, and recutting
+# the episode means editing this list (never copying scene folders). An entry
+# is either a manim scene, scene = "file.py:ClassName" under scenes/, or a
+# finished clip, clip = "assets/footage/name.mp4" under this folder.
+# Validate with: ./kg check 9
+
+[episode]
+number = 9
+slug = "optimal-control-quadrotor"
+title = "Planning Through Time: Optimal Control and the Quadrotor"
+status = "planned"        # planned | scripting | animating | narrating | review | published
+target_minutes = "~20"
+from_pdf = "Video 6, control half"
+depends_on = [1, 3, 4]      # episodes a viewer should have watched first
+
+[[timeline]]
+scene = "s00_title.py:Title"
+
+[[timeline]]
+scene = "s01_hook_gust.py:HookGust"
+
+[[timeline]]
+scene = "s02_control_problem.py:ControlProblem"
+
+[[timeline]]
+scene = "s03_bellman.py:Bellman"
+
+[[timeline]]
+scene = "s04_lqr.py:Lqr"
+
+[[timeline]]
+scene = "s05_mpc.py:Mpc"
+
+[[timeline]]
+scene = "s06_quadrotor_model.py:QuadrotorModel"
+
+[[timeline]]
+scene = "s07_quadrotor_flight.py:QuadrotorFlight"
+
+[[timeline]]
+scene = "s08_applications.py:Applications"
+
+[[timeline]]
+scene = "s09_recap_closing.py:RecapClosing"

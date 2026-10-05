@@ -1,0 +1,46 @@
+# Keep the Gradient - Episode 3 manifest
+#
+# The [[timeline]] list IS the cut: entries play in this order, and recutting
+# the episode means editing this list (never copying scene folders). An entry
+# is either a manim scene, scene = "file.py:ClassName" under scenes/, or a
+# finished clip, clip = "assets/footage/name.mp4" under this folder.
+# Validate with: ./kg check 3
+
+[episode]
+number = 3
+slug = "lagrange-kkt-svm"
+title = "Walls: Lagrange Multipliers, KKT and SVM"
+status = "planned"        # planned | scripting | animating | narrating | review | published
+target_minutes = "15–20"
+from_pdf = "Video 3, first half"
+depends_on = [2]      # episodes a viewer should have watched first
+
+[[timeline]]
+scene = "s00_title.py:Title"
+
+[[timeline]]
+scene = "s01_hook_wall.py:HookWall"
+
+[[timeline]]
+scene = "s02_constraint_types.py:ConstraintTypes"
+
+[[timeline]]
+scene = "s03_lagrange_tangency.py:LagrangeTangency"
+
+[[timeline]]
+scene = "s04_kkt_force_balance.py:KktForceBalance"
+
+[[timeline]]
+scene = "s05_complementary_slackness.py:ComplementarySlackness"
+
+[[timeline]]
+scene = "s06_svm_margin.py:SvmMargin"
+
+[[timeline]]
+scene = "s07_svm_support_vectors.py:SvmSupportVectors"
+
+[[timeline]]
+scene = "s08_multiplier_reveal.py:MultiplierReveal"
+
+[[timeline]]
+scene = "s09_recap_closing.py:RecapClosing"

@@ -1,0 +1,52 @@
+# Keep the Gradient - Episode 12 manifest
+#
+# The [[timeline]] list IS the cut: entries play in this order, and recutting
+# the episode means editing this list (never copying scene folders). An entry
+# is either a manim scene, scene = "file.py:ClassName" under scenes/, or a
+# finished clip, clip = "assets/footage/name.mp4" under this folder.
+# Validate with: ./kg check 12
+
+[episode]
+number = 12
+slug = "self-organization-moving-optimum"
+title = "Self-Organization and the Moving Optimum"
+status = "planned"        # planned | scripting | animating | narrating | review | published
+target_minutes = "~20"
+from_pdf = "Video 7, second half + series wrap-up"
+depends_on = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]      # episodes a viewer should have watched first
+
+[[timeline]]
+scene = "s00_title.py:Title"
+
+[[timeline]]
+scene = "s01_hook_ants.py:HookAnts"
+
+[[timeline]]
+scene = "s02_self_organization.py:SelfOrganization"
+
+[[timeline]]
+scene = "s03_stigmergy_bridge.py:StigmergyBridge"
+
+[[timeline]]
+scene = "s04_ant_colony_optimization.py:AntColonyOptimization"
+
+[[timeline]]
+scene = "s05_flocking.py:Flocking"
+
+[[timeline]]
+scene = "s06_swarm_robotics.py:SwarmRobotics"
+
+[[timeline]]
+scene = "s07_social_networks.py:SocialNetworks"
+
+[[timeline]]
+scene = "s08_moving_optimum.py:MovingOptimum"
+
+[[timeline]]
+scene = "s09_tracking_networks.py:TrackingNetworks"
+
+[[timeline]]
+scene = "s10_series_wrapup.py:SeriesWrapup"
+
+[[timeline]]
+scene = "s11_closing.py:Closing"

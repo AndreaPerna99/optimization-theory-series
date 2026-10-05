@@ -1,0 +1,46 @@
+# Keep the Gradient - Episode 1 manifest
+#
+# The [[timeline]] list IS the cut: entries play in this order, and recutting
+# the episode means editing this list (never copying scene folders). An entry
+# is either a manim scene, scene = "file.py:ClassName" under scenes/, or a
+# finished clip, clip = "assets/footage/name.mp4" under this folder.
+# Validate with: ./kg check 1
+
+[episode]
+number = 1
+slug = "gradient-descent"
+title = "Which Way Is Down? Gradient Descent"
+status = "planned"        # planned | scripting | animating | narrating | review | published
+target_minutes = "15–20"
+from_pdf = "Video 1, complete"
+depends_on = []      # episodes a viewer should have watched first
+
+[[timeline]]
+scene = "s00_title.py:Title"
+
+[[timeline]]
+scene = "s01_hook_blindfold.py:HookBlindfold"
+
+[[timeline]]
+scene = "s02_objective_constraints.py:ObjectiveConstraints"
+
+[[timeline]]
+scene = "s03_gradient.py:Gradient"
+
+[[timeline]]
+scene = "s04_descent_rule.py:DescentRule"
+
+[[timeline]]
+scene = "s05_step_size.py:StepSize"
+
+[[timeline]]
+scene = "s06_ill_conditioning.py:IllConditioning"
+
+[[timeline]]
+scene = "s07_pendulum_momentum.py:PendulumMomentum"
+
+[[timeline]]
+scene = "s08_projected_preview.py:ProjectedPreview"
+
+[[timeline]]
+scene = "s09_recap_closing.py:RecapClosing"

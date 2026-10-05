@@ -1,0 +1,46 @@
+# Keep the Gradient - Episode 10 manifest
+#
+# The [[timeline]] list IS the cut: entries play in this order, and recutting
+# the episode means editing this list (never copying scene folders). An entry
+# is either a manim scene, scene = "file.py:ClassName" under scenes/, or a
+# finished clip, clip = "assets/footage/name.mp4" under this folder.
+# Validate with: ./kg check 10
+
+[episode]
+number = 10
+slug = "reinforcement-learning"
+title = "Learning to Act: Reinforcement Learning"
+status = "planned"        # planned | scripting | animating | narrating | review | published
+target_minutes = "15–20"
+from_pdf = "Video 6, RL half"
+depends_on = [9]      # episodes a viewer should have watched first
+
+[[timeline]]
+scene = "s00_title.py:Title"
+
+[[timeline]]
+scene = "s01_hook_no_model.py:HookNoModel"
+
+[[timeline]]
+scene = "s02_rl_setup.py:RlSetup"
+
+[[timeline]]
+scene = "s03_bellman_optimality.py:BellmanOptimality"
+
+[[timeline]]
+scene = "s04_q_learning.py:QLearning"
+
+[[timeline]]
+scene = "s05_exploration.py:Exploration"
+
+[[timeline]]
+scene = "s06_discount.py:Discount"
+
+[[timeline]]
+scene = "s07_policy_gradient.py:PolicyGradient"
+
+[[timeline]]
+scene = "s08_continuous_control.py:ContinuousControl"
+
+[[timeline]]
+scene = "s09_recap_closing.py:RecapClosing"

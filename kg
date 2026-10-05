@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+# Keep the Gradient - build tool (see ./kg --help and docs/PRODUCTION.md)
+set -euo pipefail
+ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+PY="${KG_PYTHON:-$ROOT/.venv/bin/python}"
+if [[ ! -x "$PY" ]]; then
+  # status and check need only the standard library, so they work before setup
+  if [[ "${1:-}" == "status" || "${1:-}" == "check" ]]; then
+    PY="$(command -v python3)"
+  else
+    echo "no project environment: run ./tools/setup_env.sh (or set KG_PYTHON)" >&2
+    exit 1
+  fi
+fi
+cd "$ROOT"
+exec "$PY" -m tools.kg "$@"

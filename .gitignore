@@ -1,0 +1,27 @@
+# generated
+build/
+media/
+__pycache__/
+*.pyc
+.pytest_cache/
+*.egg-info/
+
+# environment
+.venv/
+
+# large binaries live outside git (docs/PRODUCTION.md, "Footage and Large Files");
+# the folders stay, through their .gitkeep / README.md
+episodes/*/assets/footage/*
+!episodes/*/assets/footage/.gitkeep
+episodes/*/takes/*
+!episodes/*/takes/.gitkeep
+shared/footage/*
+!shared/footage/README.md
+shared/audio/voices/
+shared/audio/kokoro/
+*.mp4
+*.mov
+*.mkv
+*.webm
+*.wav
+*.flac

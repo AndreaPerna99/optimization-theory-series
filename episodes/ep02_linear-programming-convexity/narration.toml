@@ -1,0 +1,28 @@
+# Keep the Gradient - Episode 2 narration
+#
+# One [[segment]] per utterance, added once script.md is final for a scene.
+#   id      unique, stable name of the line; audio files are keyed by it
+#   entry   the timeline entry it belongs to: a scene class name, or a clip path
+#   at      seconds from the START OF THAT ENTRY (not of the episode), so
+#           retiming one scene never shifts the lines of another
+#   budget  seconds the picture leaves for the line; ./kg narrate reports
+#           lines that run over, past their entry, or into the next line
+#   text    the spoken words; symbols spelled as they are said
+#
+# Rules learned on the previous video (docs/PRODUCTION.md, "Narration"):
+#   - pin 'at' to a picture beat (the moment an animation plays), not a caption;
+#   - never split one sentence across two segments;
+#   - commas change TTS pause length: listen to the line before timing it.
+
+[voice]
+engine = "piper"              # piper | kokoro | takes
+voice = "en_US-ryan-high"     # placeholder until the narration voice is decided (docs/OPEN_QUESTIONS.md)
+length_scale = 1.15           # piper: higher is slower
+noise_w = 0.0                 # piper: 0 makes timing reproducible
+
+# [[segment]]
+# id = "hook-factory-1"
+# entry = "HookFactory"
+# at = 0.8
+# budget = 6.0
+# text = """..."""

@@ -1,0 +1,49 @@
+# Keep the Gradient - Episode 11 manifest
+#
+# The [[timeline]] list IS the cut: entries play in this order, and recutting
+# the episode means editing this list (never copying scene folders). An entry
+# is either a manim scene, scene = "file.py:ClassName" under scenes/, or a
+# finished clip, clip = "assets/footage/name.mp4" under this folder.
+# Validate with: ./kg check 11
+
+[episode]
+number = 11
+slug = "economics-fairness-society"
+title = "Beyond Engineering: Economics, Fairness and Society"
+status = "planned"        # planned | scripting | animating | narrating | review | published
+target_minutes = "~20"
+from_pdf = "Video 7, first half"
+depends_on = [2, 3]      # episodes a viewer should have watched first
+
+[[timeline]]
+scene = "s00_title.py:Title"
+
+[[timeline]]
+scene = "s01_hook_society.py:HookSociety"
+
+[[timeline]]
+scene = "s02_resource_allocation.py:ResourceAllocation"
+
+[[timeline]]
+scene = "s03_consumer_tangency.py:ConsumerTangency"
+
+[[timeline]]
+scene = "s04_pareto_front.py:ParetoFront"
+
+[[timeline]]
+scene = "s05_scalarization.py:Scalarization"
+
+[[timeline]]
+scene = "s06_welfare_fairness.py:WelfareFairness"
+
+[[timeline]]
+scene = "s07_prices_as_multipliers.py:PricesAsMultipliers"
+
+[[timeline]]
+scene = "s08_externalities.py:Externalities"
+
+[[timeline]]
+scene = "s09_public_services.py:PublicServices"
+
+[[timeline]]
+scene = "s10_recap_closing.py:RecapClosing"

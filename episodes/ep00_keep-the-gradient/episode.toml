@@ -1,0 +1,37 @@
+# Keep the Gradient - Episode 0 manifest
+#
+# The [[timeline]] list IS the cut: entries play in this order, and recutting
+# the episode means editing this list (never copying scene folders). An entry
+# is either a manim scene, scene = "file.py:ClassName" under scenes/, or a
+# finished clip, clip = "assets/footage/name.mp4" under this folder.
+# Validate with: ./kg check 0
+
+[episode]
+number = 0
+slug = "keep-the-gradient"
+title = "Keep the Gradient"
+status = "planned"        # planned | scripting | animating | narrating | review | published
+target_minutes = "6–8"
+from_pdf = "Video 0"
+depends_on = []      # episodes a viewer should have watched first
+
+[[timeline]]
+scene = "s00_title.py:Title"
+
+[[timeline]]
+scene = "s01_cold_open.py:ColdOpen"
+
+[[timeline]]
+scene = "s02_three_ingredients.py:ThreeIngredients"
+
+[[timeline]]
+scene = "s03_everyday_examples.py:EverydayExamples"
+
+[[timeline]]
+scene = "s04_professional_examples.py:ProfessionalExamples"
+
+[[timeline]]
+scene = "s05_series_map.py:SeriesMap"
+
+[[timeline]]
+scene = "s06_closing.py:Closing"

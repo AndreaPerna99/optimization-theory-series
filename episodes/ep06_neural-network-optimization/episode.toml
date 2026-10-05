@@ -1,0 +1,49 @@
+# Keep the Gradient - Episode 6 manifest
+#
+# The [[timeline]] list IS the cut: entries play in this order, and recutting
+# the episode means editing this list (never copying scene folders). An entry
+# is either a manim scene, scene = "file.py:ClassName" under scenes/, or a
+# finished clip, clip = "assets/footage/name.mp4" under this folder.
+# Validate with: ./kg check 6
+
+[episode]
+number = 6
+slug = "neural-network-optimization"
+title = "Deep Landscapes: Neural Network Optimization"
+status = "planned"        # planned | scripting | animating | narrating | review | published
+target_minutes = "~20"
+from_pdf = "Video 4, second half"
+depends_on = [1, 3, 5]      # episodes a viewer should have watched first
+
+[[timeline]]
+scene = "s00_title.py:Title"
+
+[[timeline]]
+scene = "s01_hook_deep.py:HookDeep"
+
+[[timeline]]
+scene = "s02_backprop.py:Backprop"
+
+[[timeline]]
+scene = "s03_vanishing_exploding.py:VanishingExploding"
+
+[[timeline]]
+scene = "s04_remedies.py:Remedies"
+
+[[timeline]]
+scene = "s05_adaptive_optimizers.py:AdaptiveOptimizers"
+
+[[timeline]]
+scene = "s06_rotated_valley.py:RotatedValley"
+
+[[timeline]]
+scene = "s07_dropout.py:Dropout"
+
+[[timeline]]
+scene = "s08_applications.py:Applications"
+
+[[timeline]]
+scene = "s09_saddles.py:Saddles"
+
+[[timeline]]
+scene = "s10_recap_closing.py:RecapClosing"

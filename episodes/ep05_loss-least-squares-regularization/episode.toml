@@ -1,0 +1,49 @@
+# Keep the Gradient - Episode 5 manifest
+#
+# The [[timeline]] list IS the cut: entries play in this order, and recutting
+# the episode means editing this list (never copying scene folders). An entry
+# is either a manim scene, scene = "file.py:ClassName" under scenes/, or a
+# finished clip, clip = "assets/footage/name.mp4" under this folder.
+# Validate with: ./kg check 5
+
+[episode]
+number = 5
+slug = "loss-least-squares-regularization"
+title = "Learning From Error: Loss, Least Squares and Regularization"
+status = "planned"        # planned | scripting | animating | narrating | review | published
+target_minutes = "~20"
+from_pdf = "Video 4, first half + handwritten note"
+depends_on = [1, 3]      # episodes a viewer should have watched first
+
+[[timeline]]
+scene = "s00_title.py:Title"
+
+[[timeline]]
+scene = "s01_hook_calibration.py:HookCalibration"
+
+[[timeline]]
+scene = "s02_reprojection_error.py:ReprojectionError"
+
+[[timeline]]
+scene = "s03_newton.py:Newton"
+
+[[timeline]]
+scene = "s04_gauss_newton_lm.py:GaussNewtonLm"
+
+[[timeline]]
+scene = "s05_losses.py:Losses"
+
+[[timeline]]
+scene = "s06_sgd_noise.py:SgdNoise"
+
+[[timeline]]
+scene = "s07_overfitting.py:Overfitting"
+
+[[timeline]]
+scene = "s08_ridge_lasso.py:RidgeLasso"
+
+[[timeline]]
+scene = "s09_constraint_in_disguise.py:ConstraintInDisguise"
+
+[[timeline]]
+scene = "s10_recap_closing.py:RecapClosing"

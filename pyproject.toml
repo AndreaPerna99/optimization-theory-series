@@ -1,0 +1,32 @@
+[project]
+name = "keep-the-gradient"
+version = "0.1.0"
+description = "Keep the Gradient: a Manim video series on optimization theory"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "manim>=0.21,<0.22",
+    "numpy>=2.0",
+    "scipy>=1.13",
+]
+
+[project.optional-dependencies]
+tts = [
+    "piper-tts>=1.3",
+    "kokoro-onnx>=0.4",
+    "soundfile>=0.12",
+]
+dev = [
+    "pytest>=8",
+]
+
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["gradkit*"]   # tools/ runs from the repository root (./kg), it is not installed
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
